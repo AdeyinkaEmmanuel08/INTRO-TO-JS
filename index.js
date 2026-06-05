@@ -1,14 +1,25 @@
-// A theater offers students discounts but only on weekdays, they also offer a discount to senior citizen at any time(day of the week). Write a js code to output 1.) You qualified for a discounted ticket or a regular ticket pricing applies
-// Solution to assignment
-let isStudent = true;
-let isSenior = true;
-let dayOfWeek = "Saturday";
+// Count backwards from 10 to 1, then log "Blast off!"
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
+console.log("Blast off!");
 
-if (
-  (isStudent && dayOfWeek !== "Saturday" && dayOfWeek !== "Sunday") ||
-  isSenior
-) {
-  console.log("You qualified for a discounted ticket");
-} else {
-  console.log("Regular ticket pricing applies");
+// Calculate the sum of all numbers between 1 and 20 (inclusive)
+let sum = 0;
+for (let i = 1; i <= 20; i++) {
+  sum += i;
+}
+console.log("The sum is:", sum);
+
+// FizzBuzz from 1 to 15
+for (let i = 1; i <= 15; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("fizzbuzz");
+  } else if (i % 3 === 0) {
+    console.log("fizz");
+  } else if (i % 5 === 0) {
+    console.log("buzz");
+  } else {
+    console.log(i);
+  }
 }

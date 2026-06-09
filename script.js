@@ -800,3 +800,74 @@ for (i = 0; i <= 10; i++) {
 //   console.log(i);
 // }
 // console.log("Blast off!");
+
+// 08/06/2026
+let ids = 0;
+for (; ids < 5;) {
+    console.log(ids)
+    ids++;
+}
+
+//local scope
+var k = 2;
+
+
+for (var k = 0; k < 20; k++) {
+    console.log(k)
+}
+console.log(k)
+
+let l = 5;
+for (let l = 0; l < 20; l++) {
+    console.log(l)
+}
+console.log(l)
+
+
+
+
+// for (let units = 0; units < 15; units++) {
+//     setTimeout(() => {
+//         console.log(units)
+//     }, 3000)
+// }
+
+//while
+
+let userInp = 0;
+
+while (userInp < 20) {
+    console.log(userInp)
+    userInp++
+}
+
+let currentValue = 0;
+let rollCount = 0;
+
+while (currentValue !== 6) {
+    currentValue = Math.floor((Math.random() * 6) + 1)
+    rollCount++
+
+
+
+}
+console.log('The roll count is' ${rollCount})
+
+let Num = 2;
+let power = 0;
+while (Num < 1000) {
+    Num *= 2;
+    power++
+}
+console.log(The power is ${power})
+
+let attempts = 3;
+let pin = '1234';
+let input;
+
+while (input !== pin) {
+    input = prompt();
+    console.log('yes')
+
+
+}

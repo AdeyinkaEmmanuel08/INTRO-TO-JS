@@ -1,17 +1,11 @@
-let correctPin = "1234";
-let attempts = 0;
-let userTypedPin = "9999";
-
-while (attempts < 3) {
-  if (userTypedPin === correctPin) {
-    console.log("Access Granted. Welcome back!");
-    break;
-  } else {
-    attempts++;
-    console.log("Wrong PIN. Try again.");
-  }
+// Converting Fahrenheit to Celsius
+function fahrenheitToCelsius(fahrenheit) {
+  let celsius = ((fahrenheit - 32) * 5) / 9;
+  console.log(celsius);
 }
 
-if (attempts === 3) {
-  console.log("Access Denied. Account Locked.");
+// Converting Celsius to Fahrenheit
+function celsiusToFahrenheit(celsius) {
+  let fahrenheit = (celsius * 9) / 5 + 32;
+  console.log(fahrenheit);
 }

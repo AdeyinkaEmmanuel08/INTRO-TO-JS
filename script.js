@@ -28,10 +28,10 @@ let b = 5;
 let c = a * b;
 console.log(c);
 
-let length = 34;
-let width = 45;
-let area = length * width;
-console.log(area);
+// let length = 34;
+// let width = 45;
+// let area = length * width;
+// console.log(area);
 
 // Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. This means that you can use variables and functions before they are declared in the code. However, only the declarations are hoisted, not the initializations. It is assigning a value to a variable before declaring it For example:
 
@@ -803,28 +803,24 @@ for (i = 0; i <= 10; i++) {
 
 // 08/06/2026
 let ids = 0;
-for (; ids < 5;) {
-    console.log(ids)
-    ids++;
+for (; ids < 5; ) {
+  console.log(ids);
+  ids++;
 }
 
 //local scope
 var k = 2;
 
-
 for (var k = 0; k < 20; k++) {
-    console.log(k)
+  console.log(k);
 }
-console.log(k)
+console.log(k);
 
 let l = 5;
 for (let l = 0; l < 20; l++) {
-    console.log(l)
+  console.log(l);
 }
-console.log(l)
-
-
-
+console.log(l);
 
 // for (let units = 0; units < 15; units++) {
 //     setTimeout(() => {
@@ -834,40 +830,131 @@ console.log(l)
 
 //while
 
-let userInp = 0;
+// let userInp = 0;
 
-while (userInp < 20) {
-    console.log(userInp)
-    userInp++
+// while (userInp < 20) {
+//     console.log(userInp)
+//     userInp++
+// }
+
+// let currentValue = 0;
+// let rollCount = 0;
+
+// while (currentValue !== 6) {
+//     currentValue = Math.floor((Math.random() * 6) + 1)
+//     rollCount++
+
+// }
+// console.log('The roll count is ${rollCount}')
+
+// let Num = 2;
+// let power = 0;
+// while (Num < 1000) {
+//     Num *= 2;
+//     power++
+// }
+// console.log(The power is ${power})
+
+// let attempts = 3;
+// let pin = '1234';
+// let input;
+
+// while (input !== pin) {
+//     input = prompt();
+//     console.log('yes')
+
+// }
+
+// Do......while loop
+// let choice = '';
+
+// do{
+//   choice = prompt('Do you want to continue (Y/N)').toUpperCase();
+
+// }while(choice !== 'Y' && choice !== 'N')
+// console.log("Great, mpve to the next step ")
+
+// let diceRoll;
+// let times = 0;
+// do{
+//   diceRoll = Math.floor(Math.random() * 6 + 1);
+//   times++;
+// }while(diceRoll !== 1)
+//   console.log(times);
+//   console.log('Critical failure');
+
+//  Break
+for (let i = 0; i < 20; i++) {
+  if (i === 5) {
+    break;
+  }
+  console.log(i);
 }
 
-let currentValue = 0;
-let rollCount = 0;
+let missingBook = "Peter Pan";
 
-while (currentValue !== 6) {
-    currentValue = Math.floor((Math.random() * 6) + 1)
-    rollCount++
+let listOfBooks = [
+  "The Great Gatsby",
+  "To Kill a Mockingbird",
+  "1984",
+  "Moby",
+  "Peter Pan",
+  "War and Peace",
+];
 
-
-
+for (let i = 0; i < listOfBooks.length; i++) {
+  if (listOfBooks[i] === missingBook) {
+    console.log("Book found: " + listOfBooks[i]);
+    break;
+  }
+  console.log(listOfBooks[i]);
 }
-console.log('The roll count is' ${rollCount})
 
-let Num = 2;
-let power = 0;
-while (Num < 1000) {
-    Num *= 2;
-    power++
+// Continue
+for (let i = 0; i < 20; i++) {
+  if (i === 5) {
+    continue;
+  }
+  console.log(i);
 }
-console.log(The power is ${power})
 
-let attempts = 3;
-let pin = '1234';
-let input;
-
-while (input !== pin) {
-    input = prompt();
-    console.log('yes')
-
-
+// Let
+// Given the list of students age, remove strings and negative values from the  array.
+let studentAges = [12, 32, 10, 14, -18, "unknown", "books", -7];
+for (let i = 0; i < studentAges.length; i++) {
+  if (studentAges[i] < 0) {
+    continue;
+  } else if (typeof studentAges[i] === "string") {
+    continue;
+  }
+  console.log(studentAges[i]);
 }
+
+// Using a while loop with break and continue
+let testValue = 0;
+while (testValue < 20) {
+  if (testValue === 5) {
+    break;
+  }
+  console.log(testValue);
+  testValue++;
+}
+
+let testedValue = 2;
+while (testedValue < 20) {
+  if (testedValue % 2 === 1) {
+    testedValue++;
+    continue;
+  }
+  console.log(testedValue);
+  testedValue++;
+}
+
+// Function
+function area(length, width) {
+  let Area = length * width;
+  console.log(Area);
+}
+area(23, 12);
+
+// Write a function that'll convert from faranheit to celcius and vice versa

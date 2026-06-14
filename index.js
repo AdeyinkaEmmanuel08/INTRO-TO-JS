@@ -8,6 +8,7 @@ function checkEntry(age, isVIP) {
   }
 }
 
+// Assignment
 // // Converting Fahrenheit to Celsius
 // function fahrenheitToCelsius(fahrenheit) {
 //   let celsius = ((fahrenheit - 32) * 5) / 9;

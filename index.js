@@ -1,3 +1,12 @@
+function calculateDogAges(puppyAge) {
+  let dogAge = puppyAge * 7;
+  console.log("Your doggie is " + dogAge + " years old in dog years!");
+}
+
+calculateDogAges(1);
+calculateDogAges(3);
+calculateDogAges(5);
+
 function calculateDogAge(puppyAge, rate) {
   let dogAge = puppyAge * rate;
   console.log("Your doggie is " + dogAge + " years old in dog years!");

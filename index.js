@@ -1,29 +1,18 @@
-function checkEntry(age, isVIP) {
-  if (isVIP === true) {
-    return "Access Granted: Welcome VIP!";
-  }
-
-  if (age < 21) {
-    return "Access Denied: Too young!";
-  }
-
-  return "Access Granted: Enjoy the night!";
+function calculateDogAge(puppyAge, rate) {
+  let dogAge = puppyAge * rate;
+  console.log("Your doggie is " + dogAge + " years old in dog years!");
 }
 
-<<<<<<< HEAD
-// function checkEntry(age, isVIP) {
-//   if (isVIP === true) {
-//     console.log("Access Granted: Welcome VIP!");
-//   } else if (age < 21) {
-//     console.log("Access Denied: Too young!");
-//   } else {
-//     console.log("Access Granted: Enjoy the night!");
-//   }
-=======
-// Assignment
-// // Converting Fahrenheit to Celsius
-// function fahrenheitToCelsius(fahrenheit) {
-//   let celsius = ((fahrenheit - 32) * 5) / 9;
-//   console.log(celsius);
->>>>>>> 1a611e557e291f779a9543f971a04935578d8d80
-// }
+calculateDogAge(1, 7);
+calculateDogAge(3, 7);
+calculateDogAge(5, 7);
+
+function calcCircumfrence(radius) {
+  let circumference = 2 * 3.142 * radius;
+  console.log("The circumference is " + circumference);
+}
+
+function calcArea(radius) {
+  let area = 3.142 * radius * radius;
+  console.log("The area is " + area);
+}
